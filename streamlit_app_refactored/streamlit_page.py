@@ -13,6 +13,7 @@ receive a predicted Total Charge along with an Out-of-Pocket cost estimate.
 import streamlit as st
 import pandas as pd
 import numpy as np
+from pathlib import Path
 
 from data_loader import (
     load_and_prepare,
@@ -43,7 +44,8 @@ st.set_page_config(
     layout="wide",
 )
 
-DATA_PATH = "2018_2021.csv"
+#DATA_PATH = "2018_2021.csv"
+DATA_PATH = Path(__file__).resolve().parent / "2018_2021.csv"
 
 
 # ---------------------------------------------------------------------------
