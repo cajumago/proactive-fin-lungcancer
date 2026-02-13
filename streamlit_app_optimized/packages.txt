@@ -1,0 +1,2 @@
+libgomp1
+default-jdk-headless
